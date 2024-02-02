@@ -1,0 +1,107 @@
+/* Set the font family for the entire HTML document */
+html {
+    font-family: Arial, Helvetica, sans-serif;;
+    margin-right: 0 !important;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Reset margin and padding for the body element */
+body {
+    background-color: whitesmoke; /* Set background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for level 1 heading (h1) */
+h1 {
+    display: block;
+    padding: 30px; /* Set padding in viewport width units */
+    margin: 0;
+    width: 100%;
+    font-size: 40px; /* Set font size in viewport width units */
+    background-color: lightgreen; /* Set background color */
+}
+
+/* Styling for level 2 heading (h2) */
+h2 {
+    display: block;
+    padding: 10px; /* Set padding in viewport width units */
+    margin: 0;
+    width: 100%;
+    font-size: 17px; /* Set font size in viewport width units */
+}
+
+/* Styling for the input field with ID 'Add_items' */
+#Add_items {
+    width: 35vw; /* Set width in viewport width units */
+    margin-left: 10px; /* Set left margin */
+    float: left; /* Float the element to the left */
+}
+
+/* Styling for input of type 'date' */
+input[type='date'] {
+    float: left; /* Float the element to the left */
+    margin-left: 20px; /* Set left margin */
+}
+
+/* Styling for submit button */
+button[type='submit'] {
+    float: left; /* Float the element to the left */
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 20px; /* Set left margin */
+    color: white;
+    background-color: rgb(73, 53, 53); /* Set background color */
+}
+
+/* Styling for tasks heading */
+.Tasks_heading {
+    margin-top: 17px; /* Set top margin */
+    display: block;
+}
+
+/* Styling for tables */
+table {
+    border: 1px solid black; /* Set border style */
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%;
+    font-size: 12px;
+}
+
+/* Styling for table rows, cells, and headers */
+tr, td, th {
+    font-size: 12px;
+    border: 1px solid black; /* Set border style */
+}
+
+/* Styling for the edit form */
+#editForm {
+    display: none; /* Hide the edit form by default */
+    position: fixed; /* Set the position to fixed */
+    top: 50%; /* Center vertically at 50% of the viewport */
+    left: 50%; /* Center horizontally at 50% of the viewport */
+    transform: translate(-50%, -50%); /* Center using translate */
+    padding: 20px; /* Set padding */
+    border: 5px solid #ccc; /* Set border style and color */
+    background-color: #f4d9d9; /* Set background color */
+    z-index: 999; /* Set z-index to ensure it appears above other elements */
+    border-radius: 15px; /* Set border radius */
+}
+
+/* Styling for buttons within the edit form */
+button[type='button'] {
+    /* Float the button to the right */
+    display: block;
+    clear: both;
+    float: right;
+    margin-top: 1vw; 
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-left: 2vw; 
+    color: white;
+    background-color: rgb(73, 53, 53); /* Set background color */
+}
