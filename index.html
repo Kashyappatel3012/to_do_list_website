@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>To-Do-List</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Index.css">
+    <!-- Link to external JavaScript file -->
+    <script type="text/javascript" src="Index.js"></script>
+    <!-- Favicon for the webpage -->
+    <link rel="icon" type="image/x-icon" href="images/title_icon.jpg">
+</head>
+
+<body>
+    <!-- Main heading of the page -->
+    <h1>ToDo List</h1>
+
+    <!-- Edit form section -->
+    <div id="editForm">
+        <h2>Edit Task</h2>
+        <!-- Input for due date in the edit form -->
+        <label for="editAddItems">Due Date</label>
+        <input type="text" id="editAddItems" required>
+        <!-- Input for editing content with a date picker -->
+        <label for="editDate">Edit Content</label>
+        <input type="date" id="editDate" required>
+        <!-- Button to trigger the updateTask function -->
+        <button type="button" onclick="updateTask()">Update</button>
+    </div>
+
+    <!-- Form for adding new items -->
+    <form onsubmit="additems(); return false;">
+        <!-- Heading for adding items section -->
+        <label for="Add_items">
+            <h2>Add Items</h2>
+        </label>
+        <!-- Input for adding new items -->
+        <input type="text" id="Add_items" required>
+        <!-- Input for setting due date with a date picker -->
+        <input type="date" id="Date" required>
+        <!-- Button to submit the form and add new items -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Heading for the tasks section -->
+    <label for="Tasks">
+        <h2 class="Tasks_heading">Tasks</h2>
+    </label>
+
+    <!-- Table for displaying tasks -->
+    <table id="Tasks">
+        <!-- Table headers with specified widths -->
+        <tr>
+            <th style="width: 10%;">Work Status</th>
+            <th style="width: 50%;">Work</th>
+            <th style="width: 20%;">Due Date</th>
+            <th style="width: 10%;">Edit</th>
+            <th style="width: 10%;">Delete</th>
+        </tr>
+    </table>
+</body>
+
+</html>
